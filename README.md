@@ -34,22 +34,21 @@ Use the Waveform Editor to assign nodes for clk, rstn, and out.
 Simulate the design with different clk and rstn combinations to generate the timing diagram, and save the results.
 
 **PROGRAM**
-module SYN1 (out,clk,rstn); 
+module exp11(out,clk,rstn);
 input clk,rstn;
-output reg [3:0] out;
+output reg [3:0]out;
 always @ (posedge clk)
-begin 
-	if(!rstn) 
-		out<=0; 
-	else 
-		out <= out+1; 
-end 
+begin
+	if(!rstn)
+		out<=0;
+	else
+		out <= out+1;
+end
 endmodule
-
 
 Developed by:Mahith M
 RegisterNumber:25001152
-*/
+
 
 **RTL LOGIC UP COUNTER**
 
@@ -60,6 +59,7 @@ RegisterNumber:25001152
 <img width="1450" height="167" alt="Screenshot 2025-10-08 215746" src="https://github.com/user-attachments/assets/35b5d135-667e-4da2-8ae3-66f8ee9efdc6" />
 
 **TRUTHTABLE**
+
 <img width="544" height="275" alt="image" src="https://github.com/user-attachments/assets/1b7c73b2-bc5c-431f-891c-fd735e37ad19" />
 
 
